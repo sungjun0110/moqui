@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/xml-screen-2.1.xsd"
+        require-authentication="anonymous-all">
+    <actions>
+        <entity-find entity-name="donation.Donation" list="donationList">
+            <search-form-inputs/></entity-find>
+    </actions>
+    <widgets>
+        <label type="h1" text="Thank you for your donation!"/>
+    </widgets>
+</screen>

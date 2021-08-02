@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/xml-screen-2.1.xsd"
+        require-authentication="anonymous-all">
+    <transition name="createDonation">
+        <service-call name="DonationServices.create#Donation"/> 
+        <default-response url="../Confirmation"/>
+    </transition>
+    <actions>
+        <entity-find entity-name="donation.Donation" list="donationList">
+            <search-form-inputs/></entity-find>
+    </actions>
+    <widgets>
+        <label type="h1" text="Send Donation"/>
+        <form-single name="Donation" transition="createDonation">
+          <auto-fields-entity entity-name="donation.Donation"  field-type="edit"/>
+          <field name="submitButton"><default-field title="Donate"><submit/></default-field></field>
+        </form-single>
+    </widgets>
+</screen>

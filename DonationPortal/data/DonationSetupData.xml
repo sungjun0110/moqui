@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-facade-xml type="seed-initial">
+    <moqui.security.ArtifactGroup artifactGroupId="DONATION_PORTAL"
+            description="Donation Portal"/>
+    <moqui.security.ArtifactGroupMember artifactGroupId="DONATION_PORTAL"
+            artifactName="component://DonationPortal/screen/donation.xml"
+            artifactTypeEnumId="AT_XML_SCREEN" inheritAuthz="Y"/>
+    <moqui.security.ArtifactAuthz artifactAuthzId="DONATION_AUTHZ_ALL"
+            userGroupId="ALL_USERS" artifactGroupId="DONATION_PORTAL"
+            authzTypeEnumId="AUTHZT_ALWAYS" authzActionEnumId="AUTHZA_ALL"/>
+</entity-facade-xml>

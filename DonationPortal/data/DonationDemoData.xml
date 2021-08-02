@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-facade-xml type="demo">
+    <donation.Donation 
+        donationId="TestOne" 
+        firstName="John"
+        middleName="test"
+        lastName="Doe" 
+        emailAddress="test@test.com"
+        phoneNumber="1234567890"
+        donationAmount="100"
+
+    />
+</entity-facade-xml>
